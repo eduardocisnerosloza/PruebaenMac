@@ -23,5 +23,12 @@ public class Principal {
         l1.setTitulo("Nuevo Titulo");
         l1.setTitulo("El Principito");
         System.out.println("Libro 1: "+l1.mostrarInformacion());
+
+        l1.setTitulo("EvilPinochio");
+        l1.setAutor("Geppetto");
+        l1.setCategoria("Cuento infantil");
+        l1.setAnio(1889);
+        l1.setCantidadEjemplares(4);
+        System.out.println("Libro 1: "+l1.mostrarInformacion());
     }
 }
