@@ -30,5 +30,9 @@ public class Principal {
         l1.setAnio(1889);
         l1.setCantidadEjemplares(4);
         System.out.println("Libro 1: "+l1.mostrarInformacion());
+
+        System.out.println("Devolviendo libro...");
+        l1.devolver();
+        System.out.println("Libro 1: "+l1.mostrarInformacion());
     }
 }

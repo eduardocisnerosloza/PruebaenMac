@@ -48,6 +48,11 @@ public class Libro {
         }
         return -1; //signiica que no hay más ejemplares
     }
+    public int devolver(){
+        cantidadEjemplares++;
+        return cantidadEjemplares;
+    }
+
     public void setTitulo(String titulo){
         this.titulo=titulo;
     }
