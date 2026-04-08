@@ -13,6 +13,23 @@ public class Libro {
         anio=2014;
         cantidadEjemplares=5;
     }
+    public Libro(String t,String a, String c, int an, int can){
+        titulo=t;
+        autor=a;
+        categoria=c;
+        anio=an;
+        cantidadEjemplares=can;
+    }
+
+    public Libro(int cantidadEjemplares,
+                 String autor,String categoria, String titulo, int anio){
+        this.titulo=titulo;
+        this.autor=autor;
+        this.categoria=categoria;
+        this.anio=anio;
+        this.cantidadEjemplares=cantidadEjemplares;
+    }
+
 
     public String mostrarInformacion(){
         String aux="";
@@ -20,7 +37,7 @@ public class Libro {
         aux+="Autor: "+autor+"\n";
         aux+="Categorio: "+categoria+"\n";
         aux+="Año: "+anio+"\n";
-        aux+="Cantidad: "+cantidadEjemplares+"ejemplare(es) \n";
+        aux+="Cantidad: "+cantidadEjemplares+"ejemplar(es) \n";
         return aux;
     }
 
@@ -31,5 +48,10 @@ public class Libro {
         }
         return -1; //signiica que no hay más ejemplares
     }
+    public void setTitulo(String titulo){
+        this.titulo=titulo;
+    }
+
+
 
 }
